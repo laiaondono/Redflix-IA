@@ -2,7 +2,7 @@
   (:domain dominioPlanificador)
   
   (:objects
-     c1 c2 c3 c4 c5 c6 c7 - contenido
+    c1 c2 c3 c4 c5 c6 c7 - contenido
     dia1 dia2 dia3 dia4 dia5 dia6 dia7 - dia
   )
 

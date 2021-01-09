@@ -1,0 +1,41 @@
+(define (problem problemaPlanificador) 
+  (:domain dominioPlanificador)
+  
+  (:objects
+     c1 c2 c3 c4 c5 c6 c7 c8 c9 - contenido
+    dia1 dia2 dia3 dia4 dia5 dia6 dia7 - dia
+  )
+
+  (:init
+    (predecesor c4 c6)
+    (predecesor c2 c3)
+    (predecesor c3 c4)
+    (predecesor c1 c5)
+    (predecesor c7 c1)
+    (paralelo c6 c9)
+    (paralelo c6 c7)
+    (paralelo c8 c6)
+    (visto c2)
+    (pendiente c3)
+    (pendiente c5)
+    (pendiente c6)
+    (pendiente c8)
+    (pendiente c9)
+    (dia_siguiente dia1 dia2)
+    (dia_siguiente dia2 dia3)
+    (dia_siguiente dia3 dia4)
+    (dia_siguiente dia4 dia5)
+    (dia_siguiente dia5 dia6)
+    (dia_siguiente dia6 dia7)
+    (= (numAsignaciones dia1) 0)
+    (= (numAsignaciones dia2) 0)
+    (= (numAsignaciones dia3) 0)
+    (= (numAsignaciones dia4) 0)
+    (= (numAsignaciones dia5) 0)
+    (= (numAsignaciones dia6) 0)
+    (= (numAsignaciones dia7) 0)
+  ) 
+
+  (:goal (and (asignado c3) (asignado c5) (asignado c6) (asignado c8) (asignado c9))
+  )
+)
