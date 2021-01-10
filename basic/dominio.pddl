@@ -4,11 +4,12 @@
         contenido - object
         dia - object
     )
+
     (:predicates
         (predecesor ?c1 - contenido ?c2 - contenido) ;; ?c1 es predecesor de ?c2
-        (visto ?c1 - contenido) ;; true si ?c1 ya ha sido visto por el usuario
-        (asignado ?c1 - contenido) ;; true si ?c1 ha sido asignado al plan
-        (pendiente ?c1 - contenido) ;; true si ?c1 ha sido asignado al plan
+        (visto ?c - contenido) ;; true si ?c ya ha sido visto por el usuario
+        (asignado ?c - contenido) ;; true si ?c ha sido asignado al plan
+        (pendiente ?c - contenido) ;; true si el usuario tiene pendiente por ver el contenido ?c
         (tiene_contenido ?d - dia) ;; true si el ?d tiene un contenido asignado
     )
 
